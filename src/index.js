@@ -6,21 +6,23 @@ inputText.addEventListener("keyup", () => calculateMetrics(inputText.value));
 const metrics = [
   "Words",
   "Characters",
-  "Characters without space",
+  "Chars without space",
   "Numbers",
   "Sum of numbers",
   "Average word length",
 ];
+
 const metricsContainer = document.querySelector(".metricsContainerPrincipal");
+let metricsContent = "";
+
 for (const metric of metrics) {
-  const container = document.createElement("div");
-  const subTitle = document.createElement("h1");
-  container.classList.add("metric-container");
-  container.id = metric;
-  subTitle.textContent = metric + ": " + 0;
-  container.append(subTitle);
-  metricsContainer.appendChild(container);
+  metricsContent += `
+  <div class="metric-container" id="${metric}">
+    <h1>${metric} : 0</h1>
+  </div>
+`
 }
+metricsContainer.innerHTML = metricsContent;
 
 function calculateMetrics(text) {
   const metricContainers = document.querySelectorAll(".metric-container");
