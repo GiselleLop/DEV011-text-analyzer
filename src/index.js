@@ -6,10 +6,10 @@ inputText.addEventListener("keyup", () => calculateMetrics(inputText.value));
 const metrics = [
   "Words",
   "Characters",
-  "Chars without space",
+  "Chars w/o space",
   "Numbers",
   "Sum of numbers",
-  "Average word length",
+  "Avg. word length",
 ];
 
 const metricsContainer = document.querySelector(".metricsContainerPrincipal");
@@ -37,9 +37,9 @@ function calculateMetrics(text) {
       container.querySelector("h1").textContent =
           "Characters: " + analyzer.getCharacterCount(text);
       break;
-    case "Characters without space":
+    case "Chars w/o space":
       container.querySelector("h1").textContent =
-          "Characters without space: " +
+          "Chars w/o space: " +
           analyzer.getCharacterCountExcludingSpaces(text);
       break;
     case "Numbers":
@@ -50,9 +50,9 @@ function calculateMetrics(text) {
       container.querySelector("h1").textContent =
           "Sum of numbers: " + analyzer.getNumberSum(text);
       break;
-    case "Average word length":
+    case "Avg. word length":
       container.querySelector("h1").textContent =
-          "Average word length: " + analyzer.getAverageWordLength(text);
+          "Avg. word length: " + analyzer.getAverageWordLength(text);
       break;
     default:     
       break;
