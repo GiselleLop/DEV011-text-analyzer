@@ -1,8 +1,20 @@
-En este proyecto llamado Text Analyzer, se realiza un analizador de texto, la cual es una aplicación para extraer información útil de un texto utilizando HTML, CSS y JavaScript. 
-Esta aplicación contiene un recuadro de texto en donde la usuaria ingresará el texto que desee, debajo de este se encuentran 6 recuadros chicos en dónde cada uno tiene una función diferente. 
-1. EL primero hace el recuento de palabras.
-2. EL segundo hace el recuentro de caracteres.
-3. El tercero hace el recuento de caracteres excluyendo espacios y caracteres especiales.
-4. El cuarto hace el recuento de los número presentes en el texto.
-5. En el quinto se realiza la suma de todos los números encontrados en el texto.
-6. Y el sexto devuelve el promedio de las palabras ingresadas en el texto.
+# Text Analyzer
+
+![image](/src/images/textA.png)
+
+## Project Description:
+
+This application has been developed for text analysis and the extraction of relevant information using HTML, CSS, and JavaScript.
+
+It allows users to enter any text to calculate various metrics and obtain detailed information about its content.
+ 
+## General Features:
+
+The application calculates the following metrics:
+
+1. Word count: Displays the total number of words in the text.
+2. Character count: Calculates the total number of characters, including spaces.
+3. Characters excluding spaces and special characters: Counts only alphabetical and numeric characters.
+4. Number count: Indicates how many numbers are present in the text.
+5. Sum of numbers: Calculates the total sum of all numbers found in the text.
+6. Average word length: Returns the average length of the entered words.
